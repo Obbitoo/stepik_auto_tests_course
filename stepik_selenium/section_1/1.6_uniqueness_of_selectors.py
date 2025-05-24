@@ -6,7 +6,7 @@ try:
     link1 = "http://suninjuly.github.io/registration1.html"  # Первая линка с успешной
     link2 = "https://suninjuly.github.io/registration2.html" # Вторая линка с багом
     browser = webdriver.Chrome()
-    browser.get(link1) # Меняй номер ссылки тут ;)
+    browser.get(link2) # Меняй номер ссылки тут ;)
 
     # Мой код, который заполняет обязательные поля
     browser.find_element(By.CSS_SELECTOR, '.form-control.first:not([placeholder="Input your phone:"])').send_keys('Guts')
@@ -14,7 +14,7 @@ try:
     browser.find_element(By.CSS_SELECTOR, '.form-control.third').send_keys('kaskuotimeli@mail.ru')
     browser.find_element(By.CSS_SELECTOR, '[placeholder = "Input your phone:"]').send_keys('12345562')
     browser.find_element(By.CSS_SELECTOR, '[placeholder = "Input your address:"]').send_keys('Midland 44')
-
+    time.sleep(10)
     # Отправляем заполненную форму
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
     button.click()
