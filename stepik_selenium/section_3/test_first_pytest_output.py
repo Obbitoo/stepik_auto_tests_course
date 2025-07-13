@@ -8,7 +8,7 @@ import time
 
 class TestFirstUnittest():
 
-    '''Пишем свой первый юнит тест'''
+    '''Пишем свой первый пай тест'''
 
     def test_first_without_error(self):
         link1 = "http://suninjuly.github.io/registration1.html"  # Первая линка с успешной
